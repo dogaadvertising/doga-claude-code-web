@@ -1,0 +1,177 @@
+/* GENERADO por scripts/build-tokens.mjs desde tokens/tokens.json. No editar a mano. */
+/* DOGA Construction Design System. Modo oscuro por defecto; modo claro con [data-theme="light"]. */
+
+/* TODO(DOGA): subir archivo de fuente Trash Hand con licencia web a /assets/fonts/TrashHand.woff2 */
+@font-face {
+  font-family: 'Trash Hand';
+  src: url('/assets/fonts/TrashHand.woff2') format('woff2');
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+
+:root {
+  /* Primitivos */
+  --doga-blue: #19263C;
+  --doga-yellow: #FFB000;
+  --doga-grey: #F1F1F1;
+  --doga-black: #0C0C0C;
+  --doga-white: #FFFFFF;
+  --doga-slate: #4D5A6A;
+  --doga-gray: #9E9B98;
+  --doga-error: #C62828;
+  --doga-blue-700: #172235;
+  --doga-blue-500: #475163;
+  --doga-yellow-600: #E29C01;
+  --doga-grey-300: #DADADA;
+  --doga-olive: initial; /* TODO(DOGA): confirmar HEX. No usar aún. */
+
+  /* Tipografía */
+  --font-display: Montserrat, system-ui, sans-serif;
+  --font-body: Montserrat, system-ui, sans-serif;
+  --font-expressive: 'Trash Hand', Montserrat, system-ui, sans-serif;
+  --font-email: Montserrat, Arial, sans-serif;
+  --weight-regular: 400;
+  --weight-medium: 500;
+  --weight-semibold: 600;
+  --weight-bold: 700;
+  --weight-black: 900;
+  --type-hero: clamp(2.5rem, 6vw, 5rem);
+  --type-hero-weight: 900;
+  --type-hero-leading: 1;
+  --type-hero-tracking: -0.01em;
+  --type-hero-transform: uppercase;
+  --type-h1: clamp(2rem, 4vw, 3rem);
+  --type-h1-weight: 700;
+  --type-h1-leading: 1.1;
+  --type-h1-tracking: 0;
+  --type-h1-transform: uppercase;
+  --type-h2: clamp(1.5rem, 2.5vw, 1.75rem);
+  --type-h2-weight: 600;
+  --type-h2-leading: 1.2;
+  --type-h2-tracking: 0;
+  --type-h2-transform: none;
+  --type-body-lg: 1.125rem;
+  --type-body-lg-weight: 400;
+  --type-body-lg-leading: 1.6;
+  --type-body-lg-tracking: 0;
+  --type-body-lg-transform: none;
+  --type-body: 1rem;
+  --type-body-weight: 400;
+  --type-body-leading: 1.6;
+  --type-body-tracking: 0;
+  --type-body-transform: none;
+  --type-label: 0.75rem;
+  --type-label-weight: 500;
+  --type-label-leading: 1.4;
+  --type-label-tracking: 0.08em;
+  --type-label-transform: none;
+  --type-eyebrow: 0.8125rem;
+  --type-eyebrow-weight: 700;
+  --type-eyebrow-leading: 1.2;
+  --type-eyebrow-tracking: 0.12em;
+  --type-eyebrow-transform: uppercase;
+
+  /* Espaciado */
+  --space-1: 4px;
+  --space-2: 8px;
+  --space-3: 12px;
+  --space-4: 16px;
+  --space-5: 24px;
+  --space-6: 32px;
+  --space-7: 48px;
+  --space-8: 64px;
+  --space-9: 96px;
+
+  /* Radios */
+  --radius-sm: 6px;
+  --radius-md: 12px;
+  --radius-pill: 20px;
+  --radius-btn: 6px;
+
+  /* Bordes */
+  --border-width-default: 1px;
+  --border-width-accent: 2px;
+  --border-width-motif: 1.5px;
+  --border-width-rule: 4px;
+
+  /* Elevación. Sistema plano: única sombra permitida. */
+  --shadow-overlay: 0 8px 24px rgba(12,12,12,0.35);
+
+  /* Foco */
+  --focus-width: 2px;
+  --focus-offset: 2px;
+
+  /* Layout */
+  --layout-container: 1200px;
+  --layout-measure: 68ch;
+  --layout-gutter-mobile: 16px;
+  --layout-gutter-tablet: 24px;
+  --layout-gutter-desktop: 32px;
+  --layout-columns-mobile: 4;
+  --layout-columns-tablet: 8;
+  --layout-columns-desktop: 12;
+  --layout-section-gap-mobile: 64px;
+  --layout-section-gap-desktop: 96px;
+  --breakpoint-sm: 480px;
+  --breakpoint-md: 768px;
+  --breakpoint-lg: 1024px;
+  --breakpoint-xl: 1280px;
+
+  /* Tamaños de componente */
+  --size-touch-min: 48px;
+  --size-btn-lg: 56px;
+  --size-sticky-bar: 64px;
+  --size-email: 600px;
+  --size-ad-width: 1080px;
+  --size-ad-height-square: 1080px;
+  --size-ad-height-story: 1920px;
+  --size-ad-safe-top: 250px;
+  --size-ad-safe-bottom: 340px;
+  --opacity-hero-overlay: 0.8;
+
+  /* Semánticos. Modo oscuro (default de marca) */
+  color-scheme: dark;
+  --bg-primary: var(--doga-blue);
+  --bg-secondary: var(--doga-blue-700);
+  --bg-accent: var(--doga-yellow);
+  --text-primary: var(--doga-white);
+  --text-secondary: var(--doga-grey);
+  --text-muted: var(--doga-gray);
+  --text-headline: var(--doga-yellow);
+  --text-on-accent: var(--doga-blue);
+  --border-default: var(--doga-blue-500);
+  --border-accent: var(--doga-yellow);
+  --cta-bg: var(--doga-yellow);
+  --cta-text: var(--doga-blue);
+  --cta-bg-hover: var(--doga-yellow-600);
+  --focus-ring: var(--doga-yellow);
+  --text-error: var(--doga-white);
+  --border-error: var(--doga-error);
+}
+
+[data-theme="light"] {
+  color-scheme: light;
+  --bg-primary: var(--doga-white);
+  --bg-secondary: var(--doga-grey);
+  --bg-accent: var(--doga-yellow);
+  --text-primary: var(--doga-black);
+  --text-secondary: var(--doga-slate);
+  --text-muted: var(--doga-slate);
+  --text-headline: var(--doga-blue);
+  --text-on-accent: var(--doga-blue);
+  --border-default: var(--doga-grey-300);
+  --border-accent: var(--doga-yellow);
+  --cta-bg: var(--doga-yellow);
+  --cta-text: var(--doga-blue);
+  --cta-bg-hover: var(--doga-yellow-600);
+  --focus-ring: var(--doga-blue);
+  --text-error: var(--doga-error);
+  --border-error: var(--doga-error);
+}
+
+/* Foco visible en todos los interactivos (sección 6.5). */
+:where(a, button, input, select, textarea, summary, [tabindex]):focus-visible {
+  outline: var(--focus-width) solid var(--focus-ring);
+  outline-offset: var(--focus-offset);
+}
